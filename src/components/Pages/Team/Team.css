@@ -84,7 +84,6 @@
 	background-position: center;
 	position: relative;
 	transition: all ease 1s;
-	background-color: red;
 	cursor: pointer;
 }
 .single-member-info-container{

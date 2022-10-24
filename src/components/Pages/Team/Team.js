@@ -133,6 +133,7 @@ const Team = () => {
 					{/* team members info container end*/}
 				</div>
 				{/* end of the team member info section */}
+				
 				{/* start of the team member info section */}
 				<div className="team-members-wrapper">
 					<h3 className="section-title">
