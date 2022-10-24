@@ -1,54 +1,111 @@
-.team-container-wrapper{
+.team-container-wrapper {
 	min-height: 100vh;
+	padding: 1rem;
 }
-
-/* start style the team info container  */
-.team-info-container-wrap{
+/****************** start the  style of team info container  *******************/
+.team-info-container-wrap {
 	padding: 1rem;
 	display: flex;
-	justify-content: space-between; 
+	justify-content: space-between;
 	align-items: center;
-	/* background-color: gray; */
 	margin-top: 6rem;
 }
-.team-info-img-container{
-	/* background-color: rgb(226, 204, 204); */
+.team-info-img-container {
 	width: 45%;
 	padding: 1rem 0;
 }
-.team-info-img-container img{
+.team-info-img-container img {
 	display: block;
 	width: 100%;
 	margin: 0 auto;
 	height: 300px;
-	/* border-radius: 1rem; */
 }
-.team-info-container{
+/* ********** End of team info image container ************ */
+.team-info-container {
 	width: 47%;
 }
-.team-info-title{
+.team-info-title {
 	text-align: center;
 	padding: 1rem 0;
 	color: #0fb41d;
 	letter-spacing: 1px;
 }
-.team-info{
-	/* color: white; */
+.team-info {
 	text-align: justify;
 	font-size: 0.8rem;
 }
-
-/*************** start of the team member info  section ********************/
-.team-members-wrapper{
-	padding: 1rem 1rem;
-	/* background-color: rgba(34, 34, 34, 0.5); */
+/* ***** End of team info container ******************* */
+/* ***** Start of  Responsive style for mobile and tablet devices ************** */
+/* ********* For middle width devices ( tablet )********** */
+@media screen and (max-width:768px) {
+	.team-info-container-wrap {
+		display: block;
+		margin-top: 54px;
+	}
+	.team-info-img-container{
+		width: 80%;
+		margin: 1rem auto;
+	}
+	.team-info-img-container img{
+		height: 380px;
+	}
+	.team-info-container{
+		width: 80%;
+		margin: 1rem auto;
+	} 
 }
-.section-title{
+/* ********* End of  responsive for middle width devices ( tablet devices )********** */
+/* ******* Start of  Responsive for small width devices ( mobile devices )******** */
+@media screen and (max-width : 500px) {
+	.team-container-wrapper{
+		padding: 0;
+		/* background-color: aquamarine; */
+	}
+	.team-info-container-wrap {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 76px;
+	}
+	.team-info-img-container{	
+		width: 100%;
+		/* padding: 0 12px; */
+		margin: 0 auto;
+	}
+	.team-info-img-container img {
+		display: block;
+		width: 100%;
+		height: 500px;
+	}
+	/* **** End of team  image container ***** */
+	.team-info-container{
+		width: 100%;
+		/* padding: 0 12px;  */
+		margin: 0 auto;
+	}
+	.team-info-title{
+		padding: 1rem 0 0 0;
+		letter-spacing: 2px;
+	}
+	.team-info{
+		font-size: 0.9rem;
+		text-align: justify;
+	}
+	/* **** End of team info container ***** */
+}
+/* *******End of  Responsive  small width devices ( mobile devices )******** */
+/* ****** End of  Responsive style for mobile and tablet devices ************ */
+/* *********** End of the about section ************* */
+/*************** start of the team member info  section ********************/
+.team-members-container-wrapper {
+	padding: 1rem 1rem;
+}
+.section-title {
 	text-align: center;
-	/* padding-bottom: 1rem; */
+	padding-top: 1rem;
 	color: #06570c;
 }
-.underline-wrapper{
+.underline-wrapper {
 	display: flex;
 	justify-content: center;
 	width: 500px;
@@ -56,78 +113,109 @@
 	align-items: center;
 	margin-bottom: 1rem;
 }
-.title-underline{
-	width: 200px; 
+.title-underline {
+	width: 40%;
 	margin: 0 auto;
 	height: 1px;
 	background-color: #06570c;
 }
-.circle{
+.circle {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: #06570c;
 	margin: 0 auto;
 }
-.team-member-container{
+.team-member-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(1, 1fr);
 	grid-gap: 1rem;
-
 }
-.single-member-container{
+.single-member-container {
 	height: 250px;
 	background: url("../../../assets/img/Team/team01.jpg");
-	background-size: 300px 250px;
+	background-size: 100% 250px;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
 	transition: all ease 1s;
-	cursor: pointer;
+	cursor: pointer; 
+	background-color: skyblue;
 }
-.single-member-info-container{
-	background-color: rgba(0, 0, 0, 0.8); 
+.single-member-info-container {
+	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
-	height: 250px; 
+	height: 250px;
 	padding: 1rem;
 	display: none;
 	position: absolute;
 	padding-top: 2.5rem;
 
+	
 }
-.test{
-	/* margin: auto 0; */
-	/* margin-top: 2rem; */
-}
-.single-member-container:hover .single-member-info-container{
+.single-member-container:hover .single-member-info-container {
 	display: block;
 	top: 0;
 	left: 0;
 }
-.member-name{
- color: #0fb41d;
+.member-name {
+	color: #0fb41d;
 }
-.designation{
- font-size: 0.8rem;
+.designation {
+	font-size: 0.8rem;
 }
-.bottom-line{
+.bottom-line {
 	width: 50%;
-	/* border: 1px solid #0fb41d; */
+
 	height: 1px;
 	background-color: #0fb41d;
 	margin-bottom: 1rem;
 	margin-top: 0.4rem;
 }
-.member-education{
+.member-education {
 	font-size: 0.8rem;
 }
-	
-		
-		
-
-	
-	
-
-
+/* ***** Start apply Responsive style in the team member info container
+ for mobile and tablet devices ************** */
+ /* ********* For middle width devices ( tablet )********** */
+ @media screen and (max-width:768px) {
+	.team-member-container{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 2rem;
+	}
+	.underline-wrapper{
+		width: 70%;
+	}
+	.title-underline{
+		width: 45%;
+	}
+ }
+ /* ******* Start of  Responsive for small width devices ( mobile devices )******** */
+ @media screen and (max-width:500px) {
+	.team-member-container{
+		display: block;
+	}
+	.underline-wrapper{
+		width: 300px;
+	}
+	.circle{
+		width: 5px;
+		height: 5px;
+	}
+	.title-underline{
+		width: 45%;
+	}
+	.single-member-container{
+		margin-top: 2rem;
+	}
+	.single-member-info-container{
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+ }
+/* ***** End Responsive style in the team member info container
+ for mobile and tablet devices ************** */
 /*************** end  of the team member info  section ********************/

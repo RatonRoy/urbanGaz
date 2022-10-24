@@ -15,6 +15,7 @@ const Services = () => {
 					URBAN GAZ OFFERINGS
 				</h4>
 
+				
 				<section className="services-wrapper">
 					<Link to='/' className='link'>
 						<section className="service post-service" data-aos="fade-right">
