@@ -39,8 +39,7 @@ const Contact = () => {
          
             <Link to='/'
              className='contact-title-span-home'
-            > HOME </Link>    
-          /        
+            > HOME </Link>  /        
           <Link to="/contact" className='contact-title-span-contact'>CONTACT</Link>
          </div>
       </div>

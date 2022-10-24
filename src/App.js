@@ -5,16 +5,18 @@ import Home from "./components/Pages/Home/Home";
 import Contact from "./components/Pages/Contact/Contact";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Team from "./components/Pages/Team/Team";
 
 function App() {
   return (
     <>
       <Navbar></Navbar>
-      <SocialIcon></SocialIcon> 
+      <SocialIcon></SocialIcon>
       <Routes>
-        <Route path = '/' element = {<Home></Home>}></Route>
-        <Route path = "/contact" element = {<Contact></Contact>}>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}>
         </Route>
+        <Route path="/team" element={<Team></Team>}></Route>
       </Routes>
       <Footer></Footer>
     </>
