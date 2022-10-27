@@ -2,12 +2,10 @@ import React from 'react';
 import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 import { Link } from "react-router-dom";
 import './Footer.css';
-
 const Footer = () => {
 	return (
 		<footer className='footer-container'>
 			<div className="footer-wrapper">
-
 				<section className="footer-social-wrapper">
 					<div className="footer-social-icon">
 						<BsFacebook className="" />
@@ -24,10 +22,8 @@ const Footer = () => {
 					{/* <p className='footer-text'> Blog </p> */}
 					<Link to="/contact"> <p className='footer-text'> Contact</p></Link>
 				</div>
-
 			</div>
 		</footer>
 	);
 };
-
 export default Footer;

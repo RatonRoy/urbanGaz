@@ -1,7 +1,6 @@
 .main-review-container{
 	/* padding: 1rem 0 ; */
 	/* background-color: yellowgreen; */
-	
 }
 .new-review-title{
 	text-align: center;
@@ -22,16 +21,12 @@ align-items: center;
 display: flex;
 padding-top: 1rem;
 }
-
 .new-review-wrapper{
 	padding: 1rem; 
-	
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
-	
 	grid-gap: 2.5rem;
-
 }
 @media screen and (max-width : 768px) {
 	.new-review-wrapper{
@@ -63,8 +58,6 @@ padding-top: 1rem;
   margin-left: 1.7rem;
 }
 .new-review-name{
-
 }
 .new-designation{
-
 }

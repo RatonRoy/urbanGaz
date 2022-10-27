@@ -1,21 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
-
  /* import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();  */
-
 const Services = () => {	
 	return (
 		<>
 			<section className="services-container">
-				<h4 className="services-title">
-				
+				<h4 className="home-services-title">
 					URBAN GAZ OFFERINGS
 				</h4>
-
-				
 				<section className="services-wrapper">
 					<Link to='/' className='link'>
 						<section className="service post-service" data-aos="fade-right">
@@ -24,7 +19,7 @@ const Services = () => {
 							</h4>
 						</section>
 					</Link>
-					<Link to='/' className='link'>
+					<Link to='/gazdistribution' className='link'>
 						<section className="service install-service" data-aos="fade-right">
 							<h4 className="service-button">
 								Gaz Distribution
@@ -50,5 +45,4 @@ const Services = () => {
 		</>
 	);
 };
-
 export default Services;

@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useFormik } from "formik";
 import sendEmailSchema from '../../../Schemas/index.jsx';
 import { Link } from 'react-router-dom';
-
 const Contact = () => {
   const form = useRef();
   const initialValues = {
@@ -15,7 +14,6 @@ const Contact = () => {
     user_number: '',
     message: ''
   };
-
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: sendEmailSchema,
@@ -36,7 +34,6 @@ const Contact = () => {
       <div className="contact-img-container">
         <p className='contact-title'>CONTACT </p> 
         <div className='contact-title-span-container'>
-         
             <Link to='/'
              className='contact-title-span-home'
             > HOME </Link>  /        
@@ -83,7 +80,6 @@ const Contact = () => {
               onChange={handleChange}
               onBlur={handleBlur}
             >
-
             </textarea>
             {errors.message && touched.message ? (
               <p className="form-error">{errors.message}</p>
@@ -102,9 +98,7 @@ const Contact = () => {
                 <p className="contact-info-title contact-info-title-address">Address:</p>
                 <p className="contact-us-details">
                    360, Lakecity Shopping Complex, Khilkhet, Dhaka - 1229, Bangladesh
-
                 </p>
-
             </div>
             {/* end of single info container */}
             {/* start of  single info container */}
@@ -130,12 +124,9 @@ const Contact = () => {
             </div>
             {/* end of single info container */}
           </article>
-          
-
         </div>
       </section>
     </section>
   );
 };
-
 export default Contact;

@@ -6,7 +6,7 @@ import Contact from "./components/Pages/Contact/Contact";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Team from "./components/Pages/Team/Team";
-
+import GazDistribution from "./components/Pages/Services/Gaz.Distribution/GazDistribution";
 function App() {
   return (
     <>
@@ -16,11 +16,11 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path="/contact" element={<Contact></Contact>}>
         </Route>
-        <Route path="/team" element={<Team></Team>}></Route>
+        <Route path = "/team" element={<Team></Team>}></Route>
+        <Route path = "/gazdistribution" element = {<GazDistribution></GazDistribution>} ></Route>
       </Routes>
       <Footer></Footer>
     </>
   );
 }
-
 export default App;

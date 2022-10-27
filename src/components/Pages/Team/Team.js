@@ -10,7 +10,6 @@ const Team = () => {
 		<>
 			{/* start of the team container  */}
 			<section className="team-container-wrapper">
-				
 				<div className='team-info-container-wrap'>
 					<div className='team-info-img-container'>
 						<img src={info} alt="info image here" />
@@ -100,7 +99,6 @@ const Team = () => {
 						{/*end of  single team member container  */}
 					</div>
 					{/* team members info container end*/}
-			
 				{/* end of the team member info section */}
 				{/* start of the team member info section */}
 				<div className="team-members-wrapper">

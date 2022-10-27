@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 import './SocialIcon.css';
-
 const SocialIcon = () => {
 	return (
 		<>
@@ -13,12 +12,9 @@ const SocialIcon = () => {
 				<a href="https://www.linkedin.com/company/urban-gaz/"
                             target='blank'>
 					<BsLinkedin className='social-icon linkedin'/>
-					
 				</a>
 			</section>
 		</>
 	);
 };
-
-
 export default SocialIcon;

@@ -151,8 +151,6 @@
 	display: none;
 	position: absolute;
 	padding-top: 2.5rem;
-
-	
 }
 .single-member-container:hover .single-member-info-container {
 	display: block;
@@ -167,7 +165,6 @@
 }
 .bottom-line {
 	width: 50%;
-
 	height: 1px;
 	background-color: #0fb41d;
 	margin-bottom: 1rem;

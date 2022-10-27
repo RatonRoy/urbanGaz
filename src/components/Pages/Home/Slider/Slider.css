@@ -8,7 +8,6 @@
 	/* margin-top: 3.5rem; */
 	position: relative;
 }
-
 .banner-info-wrapper {
 	/* display: flex; */
 	/* align-items: center; */
@@ -22,22 +21,17 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-
 /* .banner-text {} */
-
 .banner-text p {
 	text-align: justify;
 	color: white;
 }
-
-
  .banner-title {
 	/* text-align: center; */
 	/* width: 20%;
 	margin: 0 auto;
 	background-color: brown; */
 }
-
 .banner-btn {
 	/* text-align: center; */
 	text-decoration: none;

@@ -1,0 +1,120 @@
+.services-container-wrapper{
+	/* min-height: 100vh; */
+}
+/* start of the figure styles  */
+.service-figure-container{
+	height: 250px;
+	background-color: #222222;
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+.services-title{
+	color: white;
+	margin-left: 8%;
+	font-size: 2rem; 
+	letter-spacing: 2px;
+	margin-top: 4rem;
+}
+.services-title-span-container{
+	color: white;
+	margin-right: 8%;
+	margin-top: 4rem;
+}
+@media screen and (max-width:768px) {
+	.services-title-span-container{
+		display: none;
+	}
+	.service-figure-container{
+		margin-bottom: 0;
+		width: 95%;
+		margin: 0 auto;
+		/* padding: 0 0.5rem; */
+	}
+}
+.services-title-span-container Link{
+	text-decoration: none;
+}
+.services-title-span-home{
+	text-decoration: none;
+	color: white;
+	padding: 0 0.3rem;
+	/* font-size: 0.8rem; */
+	color: #0fb41d;
+	transition: all ease 0.3s;
+} 
+.services-title-span-home:hover{
+	color: #61df6c;
+}
+.services-title-span-services{
+	text-decoration: none;
+	color: white;
+	padding: 0 0.3rem;
+}
+.services-title-span-services:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
+/* end  of the figure styles  */
+/* ******start styles all services ************* */
+/* for mobile devices  */
+.all-services-container-wrap{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+.single-services-container{
+	padding-bottom: 1rem;
+}
+.services-img-container{
+	width: 100%;
+}
+.services-img-container img{
+	width: 100%;
+	height: 300px;
+}
+.single-services-title{
+	text-align: center;
+	margin: 0;
+	padding: 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
+	color: #09420e;
+}
+.single-services-info{
+	text-align: justify;
+	font-size: 0.8rem;
+}
+/* *********style for tablet and desktop ************* */
+@media screen and (min-width:768px) {
+	.all-services-container-wrap{
+		margin-top: 3rem;
+	}
+	.single-services-container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 3rem;
+		min-height: 90vh;
+	}
+	.services-img-container{
+		width: 50%;
+	}
+	/* .img-two{
+		background-image:url("../../../../assets/img/Services/Gaz-distribution/services02.jpg");
+		width: 500px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 500px;
+	} */
+	.services-info-container{
+		width: 45%;
+	}	
+	.services-img-order{
+      order: 2;
+	}
+	.services-info-order{
+		order: -1;
+	}
+}
