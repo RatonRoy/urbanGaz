@@ -1,0 +1,40 @@
+.user-room-container{
+	min-height: 90vh;
+}
+.user-room-boxes{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	width: 50%;
+	margin: 0 auto;
+}
+.user-room-box{
+	width: 40%;
+}
+.btn-box{
+	border: none;
+	background-color: #237229;
+	padding: 1rem 1.5rem;
+	color: white;
+	text-transform: capitalize;
+	letter-spacing: 0.08rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 0.5rem;
+	transition: all ease 0.2s;
+}
+.btn-box:hover{
+	background-color: white;
+	color: #237229;
+	border: 1px solid #237229;
+}
+/* **********For mobile and tablet devices ***************** */
+@media screen and (max-width : 768px) {
+	.user-room-boxes{
+		width: 95%;
+	}
+	.user-room-box{
+		width: 45%;
+	}
+}
