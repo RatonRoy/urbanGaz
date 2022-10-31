@@ -8,6 +8,7 @@ import services04 from '../../../../assets/img/Services/Gaz-distribution/service
 const GazDistribution = () => {
 	return (
 		<>
+			
 			<main className="services-container-wrapper">
 				<figure className="service-figure-container">
 					<p className='services-title'> Gaz Distribution </p>

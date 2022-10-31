@@ -94,10 +94,15 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 3rem;
-		min-height: 90vh;
+		/* min-height: 90vh; */
 	}
 	.services-img-container{
-		width: 50%;
+		width: 40%;
+	}
+	.services-img-container img{
+		display: block;
+		height: 350px;
+		width: 100%;
 	}
 	/* .img-two{
 		background-image:url("../../../../assets/img/Services/Gaz-distribution/services02.jpg");

@@ -1,0 +1,132 @@
+.header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 999999999999;
+	transition: 0.5s; 
+	padding: 0 1rem;
+}
+@media screen and ( max-width:768px ){
+	.header-container{
+		display: block;
+	}
+	.mobile-menu{
+		display: flex;
+		justify-content: space-between; 
+		align-items: center;
+		padding: 0.3rem;
+	}
+}
+.logo-container{
+	/* background-color: pink; */
+
+}
+.navbar-container{
+	display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   width: 60%;
+   list-style-type: none;
+   /* background-color: blueviolet; */
+   margin-top:1rem;
+}
+.menu-list{
+	/* background-color: red; */
+}
+.submenulink, .menu-link{
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: #237229;
+	transition: all ease 0.3s;
+}
+.hover-menu{
+	position: relative;
+}
+.sub-menu-container{
+	list-style-type: none;
+	position: absolute;
+	width: 250px;
+	left: -99999999px;
+}
+.hover-menu:hover .sub-menu-container{
+	left: -32px;
+	
+}
+.sub-menu-list{
+	margin-top: 0.5rem;
+}
+.submenulink{
+	letter-spacing: 0;
+	font-weight: 500;
+}
+.submenulink:hover{
+	color: #1bbb40;
+}
+.color{
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.menu-link{
+	text-decoration: none;
+
+}
+.menu-link:hover {
+	color: #1bbb40;
+}
+.sub-menu-container{
+	/* background-color: green; */
+}
+.hamburger {
+	display: none;
+}
+
+/* ************for tablet and mobile view ****************** */
+@media screen and ( max-width:768px ){
+	.header-container{
+		flex-direction: column;
+	}
+	.navbar-container{
+		flex-direction: column;
+		width: 100%;
+		display: none;
+		background: rgb(255, 255, 255, 0.7);
+		min-height: 100vh;
+		/* padding: 0.5rem 0; */
+		justify-content: center;
+		align-items: center;
+	}
+	.menu-list{
+		margin-top: 1.5rem;
+		padding: 0.5rem 0;
+		transition: all ease 0.4s;
+	}
+	.menu-list:hover{
+		background-color: gray;
+		padding-left: 1rem;
+	}
+	.team-list{
+		paddin-top: 1rem;
+	}
+	.active{
+		display: block;
+	}
+	.hamburger {
+		display: initial;
+	}
+	.sub-menu-container{
+		/* background-color: rgba(92, 87, 87, 0.8); */
+		margin-left: 2rem;
+		height: 130px;
+	}
+	.submenulink{
+		display: block;
+		margin: 0.5rem 0;
+	}
+	.hover-menu:hover{
+		margin-bottom: 150px;
+	}
+}

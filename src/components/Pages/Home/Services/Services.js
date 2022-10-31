@@ -12,7 +12,7 @@ const Services = () => {
 					URBAN GAZ OFFERINGS
 				</h4>
 				<section className="services-wrapper">
-					<Link to='/' className='link'>
+					<Link to='/services/gazmanagement' className='link'>
 						<section className="service post-service" data-aos="fade-right">
 							<h4 className="service-button">
 								Gaz Management
@@ -26,14 +26,14 @@ const Services = () => {
 							</h4>
 						</section>
 					</Link>
-					<Link to='/' className='link'>
+					<Link to='/services/smartbilling' className='link'>
 						<section className="service smart-billing" data-aos="fade-right">
 							<h4 className="service-button delivery-btn">
 								Smart Billing
 							</h4>
 						</section>
 					</Link>
-					<Link to='/' className='link'>
+					<Link to='/services/schedulemaintenance' className='link'>
 						<section className="service delivery-service" data-aos="fade-right">
 							<h4 className="service-button schedule-btn">
 								Schedule Maintenance
