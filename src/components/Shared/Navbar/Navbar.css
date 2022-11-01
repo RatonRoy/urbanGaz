@@ -33,12 +33,13 @@
 
 .navbar-container{
 	display: flex;
-   justify-content: space-between; 
-   align-items: center;
-   width: 45%;
+   justify-content: space-between;  
+	align-items: center; 
+	width: 45%;
    list-style-type: none;
    margin-top:1.2rem;
 }
+
 
 .sub-menu-link, .menu-link{
 	font-size: 1rem;
@@ -67,7 +68,7 @@
 	margin-top: 0.5rem;
 }
 .sub-menu-link:hover{
-	color: #07661d;
+	color: #1bbb40;
 }
 .menu-link:hover {
 	color: #1bbb40;
@@ -86,15 +87,8 @@
 		display: none;
 		background: rgb(255, 255, 255, 0.7);
 		min-height: 100vh;
-		/* position: absolute;
-		top: 0;
-		left: -100%; */
-		/* z-index: -3; */
-		transition: 0.3s;
+		transition: all ease 0.3s;
 	}
-	/* .navbar-container.active{
-		left: 0;
-	} */
 	.team-list{
 		margin-top: 1rem;
 		display: block;
