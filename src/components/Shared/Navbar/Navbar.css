@@ -7,9 +7,9 @@
 	z-index: 999;
 	transition: 0.5s; 
 	padding: 0 1rem;
-	height: 3.5rem;
 	top: 0;
 	left: 0;
+	height: 40px;
 }
 .header-bg{
 	background-color: rgba(255, 255, 255, 0.7);
@@ -26,8 +26,6 @@
 		padding: 0.3rem;
 	}
 }
-.logo-container{
-}
 .navbar-container{
 	display: flex;
    justify-content: space-between; 
@@ -36,13 +34,12 @@
    list-style-type: none;
    margin-top:1rem;
 }
-.menu-list{
-}
+
 .sub-menu-link, .menu-link{
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 	text-decoration: none;
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.08rem;
 	text-transform: uppercase;
 	color: #237229;
 	transition: all ease 0.3s;
@@ -113,7 +110,7 @@
 		margin-left: 2rem;
 		height: 180px;
 		width: 100%;
-		background-color: rgba(10, 146, 89, 0.5);
+		background-color: rgba(13, 19, 16, 0.6);
 	}
 	.sub-menu-list{
 		transition: all ease 0.3s;

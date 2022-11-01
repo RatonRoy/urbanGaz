@@ -26,6 +26,14 @@ const ScheduleMaintenance = () => {
 						{/* img container */}
 						<div className="services-img-container">
 							<img src={services13} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -41,6 +49,14 @@ const ScheduleMaintenance = () => {
 						{/* img container */}
 						<div className="services-img-container img-two services-img-order">
 							<img src={services14} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						<article className='services-info-container services-info-order'>
 							<h3 className="single-services-title"> Services Title </h3>
@@ -55,6 +71,14 @@ const ScheduleMaintenance = () => {
 						{/* img container */}
 						<div className="services-img-container">
 							<img src={services15} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -70,6 +94,14 @@ const ScheduleMaintenance = () => {
 						{/* img container */}
 						<div className="services-img-container services-img-order">
 							<img src={services16} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container services-info-order'>

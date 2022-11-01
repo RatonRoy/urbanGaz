@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from '../../../assets/img/main-logo (1) copy.png';
+import logo from '../../../assets/img/logo-01.png';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { RiArrowDownSLine } from 'react-icons/ri';
@@ -49,7 +49,7 @@ const Navbar = () => {
 								</Link>
 							</li>
 							<li className='sub-menu-list'>
-								<Link to="/gazdistribution" className='sub-menu-link' onClick={handleClick}>Gaz Distribution
+								<Link to="/services/gazdistribution" className='sub-menu-link' onClick={handleClick}>Gaz Distribution
 								</Link>
 							</li>
 							<li className='sub-menu-list'>

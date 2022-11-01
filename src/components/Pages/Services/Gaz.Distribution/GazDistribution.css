@@ -94,7 +94,6 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 3rem;
-		/* min-height: 90vh; */
 	}
 	.services-img-container{
 		width: 40%;
@@ -104,15 +103,21 @@
 		height: 350px;
 		width: 100%;
 	}
-	/* .img-two{
-		background-image:url("../../../../assets/img/Services/Gaz-distribution/services02.jpg");
-		width: 500px;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		height: 500px;
-	} */
+	.service-img-caption{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.caption-title{
+		font-size: 0.8rem;
+		font-weight: 500;
+		color: #09420e;
+		letter-spacing: 2px;
+	}
+	.caption-info{
+		margin-left: 4px;
+		font-size: 0.7rem;
+		opacity: 0.9;
+	}
 	.services-info-container{
 		width: 45%;
 	}	

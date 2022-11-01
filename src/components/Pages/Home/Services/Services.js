@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
- /* import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();  */
 const Services = () => {	
 	return (
 		<>
@@ -19,7 +16,7 @@ const Services = () => {
 							</h4>
 						</section>
 					</Link>
-					<Link to='/gazdistribution' className='link'>
+					<Link to='/services/gazdistribution' className='link'>
 						<section className="service install-service" data-aos="fade-right">
 							<h4 className="service-button">
 								Gaz Distribution

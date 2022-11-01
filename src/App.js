@@ -40,7 +40,7 @@ function App() {
         <Route path="/services/gazmanagement"
           element={<GazManagement></GazManagement>}>
         </Route>
-        <Route path="/gazdistribution" element={<GazDistribution></GazDistribution>} ></Route>
+        <Route path="/services/gazdistribution" element={<GazDistribution></GazDistribution>} ></Route>
         <Route path="/services/schedulemaintenance"
           element={<ScheduleMaintenance></ScheduleMaintenance>}>
         </Route>

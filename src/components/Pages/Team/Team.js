@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Team.css';
-import info from '../../../assets/img/info.jpg';
-import team1 from '../../../assets/img/Team/team01.jpg';
-import team2 from '../../../assets/img/Team/team02.jpg';
-import team3 from '../../../assets/img/Team/team03.jpg';
+import info from '../../../assets/img/Team/info.jpg';
+
 const Team = () => {
 	return (
 		<>

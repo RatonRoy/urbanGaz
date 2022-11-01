@@ -27,6 +27,14 @@ const GazManagement = () => {
 						{/* img container */}
 						<div className="services-img-container">
 							<img src={services05} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -42,6 +50,14 @@ const GazManagement = () => {
 						{/* img container */}
 						<div className="services-img-container img-two services-img-order">
 							<img src={services06} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						<article className='services-info-container services-info-order'>
 							<h3 className="single-services-title"> Services Title </h3>
@@ -56,6 +72,14 @@ const GazManagement = () => {
 						{/* img container */}
 						<div className="services-img-container">
 							<img src={services07} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -71,6 +95,14 @@ const GazManagement = () => {
 						{/* img container */}
 						<div className="services-img-container services-img-order">
 							<img src={services08} alt="services images" />
+							<p className="service-img-caption">
+								<span className="caption-title">
+									Figure : 
+								</span>
+								<span className='caption-info'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</span>
+							</p>
 						</div>
 						{/* services img container */}
 						<article className='services-info-container services-info-order'>
