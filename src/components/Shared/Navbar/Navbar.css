@@ -4,7 +4,7 @@
 	align-items: center;
 	position: fixed;
 	width: 100%;
-	z-index: 999999999999;
+	z-index: 999;
 	transition: 0.5s; 
 	padding: 0 1rem;
 	height: 3.5rem;
@@ -32,14 +32,14 @@
 	display: flex;
    justify-content: space-between; 
    align-items: center;
-   width: 50%;
+   width: 40%;
    list-style-type: none;
    margin-top:1rem;
 }
 .menu-list{
 }
 .sub-menu-link, .menu-link{
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 600;
 	text-decoration: none;
 	letter-spacing: 0.05rem;
@@ -63,7 +63,7 @@
 	margin-top: 0.5rem;
 }
 .sub-menu-link:hover{
-	color: #1bbb40;
+	color: #07661d;
 }
 .menu-link{
 	text-decoration: none;

@@ -11,9 +11,27 @@ import GazManagement from "./components/Pages/Services/Gaz.Management/GazManagem
 import ScheduleMaintenance from "./components/Pages/Services/ScheduleMaintenance/ScheduleMaintenance";
 import SmartBilling from "./components/Pages/Services/SmartBilling/SmartBilling";
 import UserRoom from "./components/Pages/UserRoom/UserRoom";
+import { useEffect, useState } from "react";
+import ScrollToTop from "./components/Shared/ScrollToTop/ScrollToTop";
+
+
 function App() {
+  const [loadingInProgress, setLoading] = useState(false);
+	useEffect(() => {
+		setLoading(true);
+		setTimeout(() => {
+		  setLoading(false);
+		}, 3000);
+	}, []);
   return (
     <>
+      {
+        loadingInProgress ? (
+        <div className="loader-container">
+          <div className="spinner"></div>
+        </div>
+        ) : (
+        <>
       <Navbar></Navbar>
       <SocialIcon></SocialIcon>
       <Routes>
@@ -35,8 +53,12 @@ function App() {
         </Route>
         <Route path="/contact" element={<Contact></Contact>}>
         </Route>
-      </Routes>
-      <Footer></Footer>
+        </Routes>
+          <ScrollToTop></ScrollToTop>
+              <Footer></Footer>
+        </>
+      )
+      }
     </>
   );
 }

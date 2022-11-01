@@ -1,10 +1,10 @@
 import React from 'react';
 import './SmartBilling.css';
 import { Link } from 'react-router-dom';
-import services01 from '../../../../assets/img/Services/Gaz-distribution/services01.jpg';
-import services02 from '../../../../assets/img/Services/Gaz-distribution/services02.jpg';
-import services03 from '../../../../assets/img/Services/Gaz-distribution/services03.jpg';
-import services04 from '../../../../assets/img/Services/Gaz-distribution/services04.jpg';
+import services09 from '../../../../assets/img/Services/SmartBilling/services09.jpg';
+import services10 from '../../../../assets/img/Services/SmartBilling/services10.jpg';
+import services11 from '../../../../assets/img/Services/SmartBilling/services11.jpg';
+import services12 from '../../../../assets/img/Services/SmartBilling/services12.jpg';
 
 const SmartBilling = () => {
 	return (
@@ -25,7 +25,7 @@ const SmartBilling = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services01} alt="services images" />
+							<img src={services09} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -40,7 +40,7 @@ const SmartBilling = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container img-two services-img-order">
-							<img src={services02} alt="services images" />
+							<img src={services10} alt="services images" />
 						</div>
 						<article className='services-info-container services-info-order'>
 							<h3 className="single-services-title"> Services Title </h3>
@@ -54,7 +54,7 @@ const SmartBilling = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services03} alt="services images" />
+							<img src={services11} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -69,7 +69,7 @@ const SmartBilling = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container services-img-order">
-							<img src={services04} alt="services images" />
+							<img src={services12} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container services-info-order'>

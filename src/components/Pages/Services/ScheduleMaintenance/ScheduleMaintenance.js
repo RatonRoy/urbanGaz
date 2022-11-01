@@ -1,10 +1,10 @@
 import React from 'react';
 import './ScheduleMaintenance.css';
 import { Link } from 'react-router-dom';
-import services01 from '../../../../assets/img/Services/Gaz-distribution/services01.jpg';
-import services02 from '../../../../assets/img/Services/Gaz-distribution/services02.jpg';
-import services03 from '../../../../assets/img/Services/Gaz-distribution/services03.jpg';
-import services04 from '../../../../assets/img/Services/Gaz-distribution/services04.jpg';
+import services13 from '../../../../assets/img/Services/ScheduleMaintenance/services13.jpg';
+import services14 from '../../../../assets/img/Services/ScheduleMaintenance/services14.jpg';
+import services15 from '../../../../assets/img/Services/ScheduleMaintenance/services15.jpg';
+import services16 from '../../../../assets/img/Services/ScheduleMaintenance/services16.jpg';
 
 const ScheduleMaintenance = () => {
 	return (
@@ -25,7 +25,7 @@ const ScheduleMaintenance = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services01} alt="services images" />
+							<img src={services13} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -40,7 +40,7 @@ const ScheduleMaintenance = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container img-two services-img-order">
-							<img src={services02} alt="services images" />
+							<img src={services14} alt="services images" />
 						</div>
 						<article className='services-info-container services-info-order'>
 							<h3 className="single-services-title"> Services Title </h3>
@@ -54,7 +54,7 @@ const ScheduleMaintenance = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services03} alt="services images" />
+							<img src={services15} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -69,7 +69,7 @@ const ScheduleMaintenance = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container services-img-order">
-							<img src={services04} alt="services images" />
+							<img src={services16} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container services-info-order'>

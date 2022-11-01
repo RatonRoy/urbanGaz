@@ -1,10 +1,10 @@
 import React from 'react';
 import './GazManagement.css';
 import { Link } from 'react-router-dom';
-import services01 from '../../../../assets/img/Services/Gaz-distribution/services01.jpg';
-import services02 from '../../../../assets/img/Services/Gaz-distribution/services02.jpg';
-import services03 from '../../../../assets/img/Services/Gaz-distribution/services03.jpg';
-import services04 from '../../../../assets/img/Services/Gaz-distribution/services04.jpg';
+import services05 from '../../../../assets/img/Services/Gaz.Management/services05.jpg';
+import services06 from '../../../../assets/img/Services/Gaz.Management/services06.jpg';
+import services07 from '../../../../assets/img/Services/Gaz.Management/services07.jpg';
+import services08 from '../../../../assets/img/Services/Gaz.Management/services08.jpg';
 
 const GazManagement = () => {
 	return (
@@ -26,7 +26,7 @@ const GazManagement = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services01} alt="services images" />
+							<img src={services05} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -41,7 +41,7 @@ const GazManagement = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container img-two services-img-order">
-							<img src={services02} alt="services images" />
+							<img src={services06} alt="services images" />
 						</div>
 						<article className='services-info-container services-info-order'>
 							<h3 className="single-services-title"> Services Title </h3>
@@ -55,7 +55,7 @@ const GazManagement = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container">
-							<img src={services03} alt="services images" />
+							<img src={services07} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container'>
@@ -70,7 +70,7 @@ const GazManagement = () => {
 					<section className="single-services-container">
 						{/* img container */}
 						<div className="services-img-container services-img-order">
-							<img src={services04} alt="services images" />
+							<img src={services08} alt="services images" />
 						</div>
 						{/* services img container */}
 						<article className='services-info-container services-info-order'>
