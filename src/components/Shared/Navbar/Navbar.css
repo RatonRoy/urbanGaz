@@ -5,15 +5,19 @@
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	transition: 0.5s; 
+	height: 3.5rem;
+	transition: all ease 0.5s; 
+	background-color: transparent;
 	padding: 0 1rem;
 	top: 0;
 	left: 0;
-	height: 50px;
 }
 .header-bg{
-	background-color: rgba(255, 255, 255, 0.7);
-	transition: 0.5s;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: all ease 0.5s;
+}
+.logo-link{
+	display: block;
 }
 @media screen and ( max-width:992px ){
 	.header-container{
@@ -26,21 +30,24 @@
 		padding: 0.3rem;
 	}
 }
+
 .navbar-container{
 	display: flex;
    justify-content: space-between; 
    align-items: center;
    width: 45%;
    list-style-type: none;
-   margin-top:1rem;
+   margin-top:1.2rem;
 }
 
 .sub-menu-link, .menu-link{
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
+
 	text-decoration: none;
-	letter-spacing: 0.08rem;
+	letter-spacing: 0.1rem;
 	text-transform: uppercase;
+
 	color: #237229;
 	transition: all ease 0.3s;
 }
@@ -50,7 +57,7 @@
 .sub-menu-container{
 	list-style-type: none;
 	position: absolute;
-	width: 250px;
+	width: 300px;
 	left: -99999999px;
 }
 .hover-menu:hover .sub-menu-container{
@@ -61,9 +68,6 @@
 }
 .sub-menu-link:hover{
 	color: #07661d;
-}
-.menu-link{
-	text-decoration: none;
 }
 .menu-link:hover {
 	color: #1bbb40;
@@ -82,15 +86,26 @@
 		display: none;
 		background: rgb(255, 255, 255, 0.7);
 		min-height: 100vh;
+		/* position: absolute;
+		top: 0;
+		left: -100%; */
+		/* z-index: -3; */
+		transition: 0.3s;
+	}
+	/* .navbar-container.active{
+		left: 0;
+	} */
+	.team-list{
+		margin-top: 1rem;
+		display: block;
 	}
 	.menu-list{
-		/* margin-top: 1.5rem; */
-		padding: 0.3rem 0;
-		transition: all ease 0.4s;
+		padding: 0.3rem 1rem;
+		margin-top: 1rem;
+		transition: all ease-in-out 0.3s;  
 	}
 	.menu-list:hover{
 		background-color: rgb(153, 151, 151);
-		padding-left: 1rem;
 	}
 	.menu-link{
 		font-size: 1.5rem;
@@ -102,7 +117,7 @@
 	}
 	.active{
 		display: block;
-	}
+	} 
 	.hamburger {
 		display: initial;
 	}
@@ -110,7 +125,6 @@
 		margin-left: 2rem;
 		height: 180px;
 		width: 100%;
-		background-color: rgba(13, 19, 16, 0.6);
 	}
 	.sub-menu-list{
 		transition: all ease 0.3s;
@@ -119,16 +133,14 @@
 		display: block;
 		margin: 0.1rem 0;
 		font-size: 1.2rem;
-		color: white;
+		color: #237229;
 		transition: all ease 0.3s;
 	}
 	.sub-menu-link:hover{
-		color: rgb(195, 216, 235);
-	}
-	.sub-menu-list:hover{
-		padding-left: 1.5rem;
+		color: #0a9259;
+		padding-left: 1rem;
 	}
 	.hover-menu:hover{
-		margin-bottom: 180px;
+		margin-bottom: 175px;
 	}
 }

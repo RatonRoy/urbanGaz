@@ -4,6 +4,7 @@ import logo from '../../../assets/img/logo-01.png';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { RiArrowDownSLine } from 'react-icons/ri';
+
 const Navbar = () => {
 	const [color, setColor] = useState(false);
 	const [click, setClick] = useState(false);
@@ -16,13 +17,14 @@ const Navbar = () => {
 		}
 	};
 	window.addEventListener("scroll", changeColor);
+
 	return (
 		<>
 			<header className={color ? "header-container header-bg" : "header-container"}>
 				{/* logo container */}
 				<div className="mobile-menu">
 					<div className="logo-container">
-						<Link to="/">
+						<Link to="/" className='logo-link'>
 							<img src={logo} alt="" className="logo-img" />
 						</Link>
 					</div>
