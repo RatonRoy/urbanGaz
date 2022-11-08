@@ -33,18 +33,19 @@
 
 .navbar-container{
 	display: flex;
-   justify-content: space-between;  
+   /* justify-content: space-between;   */
+   /* margin: 0 1rem; */
 	align-items: center; 
-	width: 45%;
+	/* width: 45%; */
    list-style-type: none;
    margin-top:1.2rem;
 }
 
 
-.sub-menu-link, .menu-link{
+.menu-link{
 	font-size: 1rem;
 	font-weight: 600;
-
+	margin: 0 1rem;
 	text-decoration: none;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
@@ -52,6 +53,7 @@
 	color: #237229;
 	transition: all ease 0.3s;
 }
+/*** sub-menu 
 .hover-menu{
 	position: relative;
 }
@@ -70,6 +72,7 @@
 .sub-menu-link:hover{
 	color: #1bbb40;
 }
+****/
 .menu-link:hover {
 	color: #1bbb40;
 }
@@ -115,6 +118,7 @@
 	.hamburger {
 		display: initial;
 	}
+	/***********
 	.sub-menu-container{
 		margin-left: 2rem;
 		height: 180px;
@@ -137,4 +141,5 @@
 	.hover-menu:hover{
 		margin-bottom: 175px;
 	}
+	*******/
 }

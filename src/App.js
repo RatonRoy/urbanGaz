@@ -11,11 +11,16 @@ import GazManagement from "./components/Pages/Services/Gaz.Management/GazManagem
 import ScheduleMaintenance from "./components/Pages/Services/ScheduleMaintenance/ScheduleMaintenance";
 import SmartBilling from "./components/Pages/Services/SmartBilling/SmartBilling";
 import UserRoom from "./components/Pages/UserRoom/UserRoom";
-import { useEffect, useState } from "react";
-import ScrollToTop from "./components/Shared/ScrollToTop/ScrollToTop";
+import { useEffect, useState, useRef } from "react";
+
 
 
 function App() {
+  const ref = useRef(null);
+
+  const handleSmoothClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
   const [loadingInProgress, setLoading] = useState(false);
 	useEffect(() => {
 		setLoading(true);
@@ -32,7 +37,7 @@ function App() {
         </div>
         ) : (
         <>
-      <Navbar></Navbar>
+              <Navbar ref= { ref} handleSmoothClick = {handleSmoothClick} />
       <SocialIcon></SocialIcon>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

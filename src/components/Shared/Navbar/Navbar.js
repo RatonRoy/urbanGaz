@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { RiArrowDownSLine } from 'react-icons/ri';
 
-const Navbar = () => {
+const Navbar = (props) => {
 	const [color, setColor] = useState(false);
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
+	// const {handleSmoothClick, } = props 
 	const changeColor = () => {
 		if (window.scrollY >= 100) {
 			setColor(true);
@@ -42,10 +43,12 @@ const Navbar = () => {
 						<Link to="/team" className='menu-link team' onClick={handleClick}> Team </Link>
 					</li>
 					<li className='menu-list hover-menu'>
-						<Link to="/" className='menu-link'>Offerings
-							<span> <RiArrowDownSLine></RiArrowDownSLine> </span>
+						<Link to="/" className='menu-link'
+						onClick={props.handleSmoothClick}
+						>Offerings
+							{/* <span> <RiArrowDownSLine></RiArrowDownSLine> </span> */}
 						</Link>
-						<ul className="sub-menu-container">
+						{/* <ul className="sub-menu-container">
 							<li className='sub-menu-list'>
 								<Link to="/services/gazmanagement" className='sub-menu-link' onClick={handleClick}>Gaz Management
 								</Link>
@@ -62,7 +65,7 @@ const Navbar = () => {
 								<Link to="/services/schedulemaintenance" className='sub-menu-link' onClick={handleClick}>Schedule Maintenance
 								</Link>
 							</li>
-						</ul>
+						</ul> */}
 					</li>
 					<li className='menu-list'>
 						<Link to="/user-room" className='menu-link' onClick={handleClick}>
