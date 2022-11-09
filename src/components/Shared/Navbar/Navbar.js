@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import * as Scroll from 'react-scroll';
 
-const Navbar = (props) => {
+const Navbar = () => {
 	let LinkS = Scroll.Link;
 	const [color, setColor] = useState(false);
 	const [click, setClick] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = (props) => {
 						<LinkS to="offerings"
 							spy={true} smooth={false} offset={-40} 
 							className='menu-link'
-						onClick={props.handleSmoothClick}
+							onClick={handleClick}
 						>
 							Offerings
 							
