@@ -3,7 +3,6 @@ import './Navbar.css';
 import logo from '../../../assets/img/logo-01.png';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { RiArrowDownSLine } from 'react-icons/ri';
 import * as Scroll from 'react-scroll';
 
 const Navbar = (props) => {
@@ -11,7 +10,6 @@ const Navbar = (props) => {
 	const [color, setColor] = useState(false);
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
-	// const {handleSmoothClick, } = props 
 	const changeColor = () => {
 		if (window.scrollY >= 100) {
 			setColor(true);

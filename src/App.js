@@ -59,7 +59,6 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}>
         </Route>
         </Routes>
-          {/* <ScrollToTop></ScrollToTop> */}
         <Footer></Footer>
         </>
       )
