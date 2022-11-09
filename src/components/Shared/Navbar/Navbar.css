@@ -52,6 +52,7 @@
 
 	color: #237229;
 	transition: all ease 0.3s;
+	cursor: pointer;
 }
 /*** sub-menu 
 .hover-menu{

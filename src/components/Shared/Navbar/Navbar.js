@@ -4,8 +4,10 @@ import logo from '../../../assets/img/logo-01.png';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { RiArrowDownSLine } from 'react-icons/ri';
+import * as Scroll from 'react-scroll';
 
 const Navbar = (props) => {
+	let LinkS = Scroll.Link;
 	const [color, setColor] = useState(false);
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
@@ -43,29 +45,15 @@ const Navbar = (props) => {
 						<Link to="/team" className='menu-link team' onClick={handleClick}> Team </Link>
 					</li>
 					<li className='menu-list hover-menu'>
-						<Link to="/" className='menu-link'
+						<LinkS to="offerings"
+							spy={true} smooth={false} offset={-40} 
+							className='menu-link'
 						onClick={props.handleSmoothClick}
-						>Offerings
-							{/* <span> <RiArrowDownSLine></RiArrowDownSLine> </span> */}
-						</Link>
-						{/* <ul className="sub-menu-container">
-							<li className='sub-menu-list'>
-								<Link to="/services/gazmanagement" className='sub-menu-link' onClick={handleClick}>Gaz Management
-								</Link>
-							</li>
-							<li className='sub-menu-list'>
-								<Link to="/services/gazdistribution" className='sub-menu-link' onClick={handleClick}>Gaz Distribution
-								</Link>
-							</li>
-							<li className='sub-menu-list'>
-								<Link to="/services/smartbilling" className='sub-menu-link' onClick={handleClick}> Smart Billing
-								</Link>
-							</li>
-							<li className='sub-menu-list'>
-								<Link to="/services/schedulemaintenance" className='sub-menu-link' onClick={handleClick}>Schedule Maintenance
-								</Link>
-							</li>
-						</ul> */}
+						>
+							Offerings
+							
+						</LinkS>
+						
 					</li>
 					<li className='menu-list'>
 						<Link to="/user-room" className='menu-link' onClick={handleClick}>

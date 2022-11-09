@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
+import * as Scroll from 'react-scroll';
+
 const Services = () => {	
+	let Element   = Scroll.Element;
 	return (
 		<>
-			<section className="services-container">
+			<Element className="services-container element"
+			name = 'offerings'
+			>
 				<h4 className="home-services-title">
 					URBAN GAZ OFFERINGS
 				</h4>
@@ -38,7 +43,7 @@ const Services = () => {
 						</section>
 					</Link>
 				</section>
-			</section>
+			</Element>
 		</>
 	);
 };
